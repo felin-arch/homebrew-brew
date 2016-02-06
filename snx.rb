@@ -1,6 +1,6 @@
 class Snx < Formula
   desc "SNX installer"
-  url "https://github.com/felin-arch/snx/archive/0.0.6.tar.gz"
+  url "https://github.com/felin-arch/snx/archive/0.0.7.tar.gz"
   sha256 ""
 
   depends_on "terminal-notifier"
