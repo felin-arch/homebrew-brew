@@ -55,7 +55,7 @@ class Snx < Formula
 
 
     IMPORTANT! Upon your first connection you will be prompted to
-    accept the server's certificate. The installed apps will only
+    verify the server's certificate. The installed apps will only
     work after this. Please connect now using:
         #{first_connect_command}
 
