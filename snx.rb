@@ -23,7 +23,7 @@ class Snx < Formula
     ohai "Allright! I need some info to set up the scripts."
     server = prompt "Server: "
     username = prompt "Username: "
-    keychain = prompt "Keychain item holding AD pass: "
+    keychain = prompt "Keychain item holding VPN password: "
 
     ohai "Customizing apps"
     inreplace "apps/cpup.app/Contents/document.wflow", "#SERVER#", server
@@ -53,8 +53,11 @@ class Snx < Formula
         rm -rf #{user_app_dir}cpstat.app
         rm -rf #{user_app_dir}cpdown.app
 
+    IMPORTANT! The application needs to access the keychain to retrieve
+    the password for the VPN connection. Upon the first launch of cpup.app
+    you will be prompted to allow this.
 
-    IMPORTANT! Upon your first connection you will be prompted to
+    IMPORTANT! Upon your first VPN connection you will be prompted to
     verify the server's certificate. The installed apps will only
     work after this. Please connect now using:
         #{first_connect_command}
