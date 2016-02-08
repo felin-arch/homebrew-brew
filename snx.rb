@@ -59,6 +59,8 @@ class Snx < Formula
     work after this. Please connect now using:
         #{first_connect_command}
 
+    For more information visit: https://github.com/felin-arch/snx
+
     Enjoy!
     EOS
   end
