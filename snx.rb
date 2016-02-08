@@ -53,14 +53,14 @@ class Snx < Formula
         rm -rf #{user_app_dir}cpstat.app
         rm -rf #{user_app_dir}cpdown.app
 
-    IMPORTANT! The application needs to access the keychain to retrieve
-    the password for the VPN connection. Upon the first launch of cpup.app
-    you will be prompted to allow this.
-
     IMPORTANT! Upon your first VPN connection you will be prompted to
     verify the server's certificate. The installed apps will only
     work after this. Please connect now using:
         #{first_connect_command}
+ 
+    IMPORTANT! The application needs to access the keychain to retrieve
+    the password for the VPN connection. Upon the first launch of cpup.app
+    you will be prompted to allow this.
 
     For more information visit: https://github.com/felin-arch/snx
 
