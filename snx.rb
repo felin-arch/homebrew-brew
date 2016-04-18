@@ -11,7 +11,7 @@ class Snx < Formula
     bin.install "snx"
     ohai "Setting snx executable privileges"
     system "sudo", "chown", "root", "#{bin}/snx"
-    system "sudo", "chmod", "4775", "#{bin}/snx"
+    system "sudo", "chmod", "4755", "#{bin}/snx"
     ohai "Installing CAverify app"
     system "sudo", "install", "-d", "-o", "0", "-g", "0", "-m", "0700", "/etc/snx"
     system "sudo", "install", "-d", "-o", "0", "-g", "0", "-m=u=rwx", "/etc/snx/tmp"
